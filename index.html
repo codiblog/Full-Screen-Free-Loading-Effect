@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-  </head>
-  <body>
-    <h1>Nice</h1>
-  </body>
+	<head>
+		<title>Full Screen Page Preloading Effect</title>
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js' type='text/javascript'></script>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div id='preloader'>
+		   <div id='status'>
+			  <img alt='' height='64' src='http://4.bp.blogspot.com/-lZ3Rlcd4QxE/Vq3_Op4ddlI/AAAAAAAAAX8/fVu4y3E-B44/s1600/129%2B%25281%2529.gif' width='64'/>
+		   </div>
+		</div>
+		<div id="content">
+			<h1>After page preloader content</h1>
+		</div>
+		<script>
+		/*====================================
+  Preloader
+======================================*/
+
+ $(window).load(function() {
+
+   $("#status").fadeOut("slow");
+
+   $("#preloader").delay(500).fadeOut("slow").remove();     
+
+ });
+		</script>
+	</body>
 </html>
