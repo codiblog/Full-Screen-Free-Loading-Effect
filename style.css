@@ -1,5 +1,5 @@
 body {
-	background-image: url(http://bestwallpaperhd.com/wp-content/uploads/2012/12/nature-background-for-computer.jpg);
+	background-image: url(images/bg.png);
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: repeat;
@@ -23,12 +23,12 @@ a {
     color: #fff;
 }
 #content {
-	color: #fff;
+	color: #222;
 	text-align: center;
 	max-width: 30%;
-	margin: 250px auto 0;
+	margin: 200px auto 0;
 	padding: 50px;
-	border: 4px solid #fff;
+	border: 4px solid #222;
 }
 #preloader {
     position: fixed;
